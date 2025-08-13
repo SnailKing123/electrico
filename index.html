@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Электрико - Профессиональные электромонтажные услуги в Казани | Замена проводки, установка розеток, монтаж щитов</title>
+    <meta name="description" content="Электромонтажные услуги в Казани от компании Электрико. Опыт 8+ лет, гарантия 3 года. Монтаж проводки, установка розеток, электрощиты. Выезд в день обращения.">
+    <meta name="keywords" content="электрик Казань, электромонтаж Казань, замена проводки, установка розеток, монтаж щитов, Электрико">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <!-- Lightning bolt logo -->
+                        <rect width="40" height="40" rx="8" fill="#1E3A8A"/>
+                        <path d="M22 8L12 22H18L16 32L26 18H20L22 8Z" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"/>
+                        <circle cx="30" cy="10" r="3" fill="#F59E0B" opacity="0.8"/>
+                        <circle cx="10" cy="30" r="3" fill="#F59E0B" opacity="0.6"/>
+                    </svg>
+                    <span class="logo-text">Электрико</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Главная</a></li>
+                    <li><a href="services.html" class="nav-link">Услуги</a></li>
+                    <li><a href="#pricing" class="nav-link">Цены</a></li>
+                    <li><a href="#about" class="nav-link">О компании</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#tips" class="nav-link">Советы</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                <div class="nav-contact">
+                    <a href="tel:+78433237777" class="phone">+7 (843) 323-77-77</a>
+                    <button class="btn btn--primary btn--sm" onclick="scrollToContact()">Заказать звонок</button>
+                </div>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs" id="breadcrumbs">
+        <div class="container">
+            <span>Главная</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Профессиональные электромонтажные услуги в Казани</h1>
+                    <p>Выполняем полный спектр электротехнических работ с гарантией качества. Опыт работы более 8 лет, собственная служба контроля качества.</p>
+
+                    <div class="hero-features">
+                        <div class="feature">
+                            <span class="icon">⚡</span>
+                            <span>Выезд в течение 2 часов</span>
+                        </div>
+                        <div class="feature">
+                            <span class="icon">🛡️</span>
+                            <span>Гарантия до 3 лет</span>
+                        </div>
+                        <div class="feature">
+                            <span class="icon">💰</span>
+                            <span>Фиксированные цены</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-actions">
+                        <button class="btn btn--primary btn--lg" onclick="scrollToContact()">Получить бесплатную консультацию</button>
+                        <button class="btn btn--outline btn--lg" onclick="scrollToSection('pricing')">Посмотреть цены</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Электромонтажные работы">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Наши услуги</h2>
+                <p>Полный спектр электромонтажных работ для дома и офиса</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">⚡</div>
+                    <h3>Электромонтаж квартир</h3>
+                    <div class="service-price">от 1 200 ₽</div>
+                    <p>Полная замена электропроводки, монтаж розеток, выключателей и освещения</p>
+                    <button class="btn btn--primary">Заказать</button>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🏠</div>
+                    <h3>Электромонтаж домов</h3>
+                    <div class="service-price">от 2 500 ₽</div>
+                    <p>Монтаж электросистем в частных домах и коттеджах любой сложности</p>
+                    <button class="btn btn--primary">Заказать</button>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🏢</div>
+                    <h3>Коммерческий электромонтаж</h3>
+                    <div class="service-price">от 1 800 ₽</div>
+                    <p>Электромонтаж в офисах, магазинах, ресторанах и других коммерческих помещениях</p>
+                    <button class="btn btn--primary">Заказать</button>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🔧</div>
+                    <h3>Ремонт и обслуживание</h3>
+                    <div class="service-price">от 800 ₽</div>
+                    <p>Устранение неисправностей, профилактическое обслуживание электрооборудования</p>
+                    <button class="btn btn--primary">Заказать</button>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Монтаж электрощитов</h3>
+                    <div class="service-price">от 3 500 ₽</div>
+                    <p>Установка и подключение распределительных щитов с автоматическими выключателями</p>
+                    <button class="btn btn--primary">Заказать</button>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🔌</div>
+                    <h3>Установка розеток и выключателей</h3>
+                    <div class="service-price">от 450 ₽</div>
+                    <p>Монтаж розеток, выключателей, USB-розеток любых типов</p>
+                    <button class="btn btn--primary">Заказать</button>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 32px;">
+                <a href="services.html" class="btn btn--primary btn--lg">Все услуги</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Прайс-лист на услуги</h2>
+                <p>Фиксированные цены без скрытых доплат</p>
+            </div>
+            <div class="pricing-table">
+                <div class="pricing-header">
+                    <div>Вид работ</div>
+                    <div>Единица измерения</div>
+                    <div>Цена</div>
+                </div>
+                <div class="pricing-row">
+                    <div>Замена автоматического выключателя</div>
+                    <div>1 шт.</div>
+                    <div>450 ₽</div>
+                </div>
+                <div class="pricing-row">
+                    <div>Установка розетки</div>
+                    <div>1 шт.</div>
+                    <div>650 ₽</div>
+                </div>
+                <div class="pricing-row">
+                    <div>Установка выключателя</div>
+                    <div>1 шт.</div>
+                    <div>550 ₽</div>
+                </div>
+                <div class="pricing-row pricing-row--highlight">
+                    <div>Монтаж электрощита (до 12 модулей)</div>
+                    <div>1 шт.</div>
+                    <div>4 500 ₽</div>
+                </div>
+                <div class="pricing-row">
+                    <div>Штробление стен под проводку</div>
+                    <div>1 м.п.</div>
+                    <div>120 ₽</div>
+                </div>
+                <div class="pricing-row">
+                    <div>Прокладка кабеля в гофре</div>
+                    <div>1 м.п.</div>
+                    <div>80 ₽</div>
+                </div>
+                <div class="pricing-row">
+                    <div>Установка светильника</div>
+                    <div>1 шт.</div>
+                    <div>750 ₽</div>
+                </div>
+                <div class="pricing-row">
+                    <div>Подключение варочной панели</div>
+                    <div>1 шт.</div>
+                    <div>1 200 ₽</div>
+                </div>
+                <div class="pricing-row pricing-row--highlight">
+                    <div>Комплексная замена проводки (1-комн. кв.)</div>
+                    <div>квартира</div>
+                    <div>25 000 ₽</div>
+                </div>
+                <div class="pricing-row">
+                    <div>Диагностика электропроводки</div>
+                    <div>услуга</div>
+                    <div>1 500 ₽</div>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <strong>Внимание!</strong> Точная стоимость работ определяется после выезда мастера и осмотра объекта. Цены указаны без стоимости материалов.
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>О компании Электрико</h2>
+                <p>Надежный партнер в решении любых электротехнических задач</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Почему выбирают нас?</h3>
+                    <p>Компания "Электрико" работает на рынке электромонтажных услуг уже более 8 лет. За это время мы выполнили свыше 2000 проектов различной сложности и заслужили доверие тысяч клиентов.</p>
+
+                    <div class="advantages-grid">
+                        <div class="advantage">
+                            <div class="advantage-icon">✅</div>
+                            <div>Опыт работы более 8 лет</div>
+                        </div>
+                        <div class="advantage">
+                            <div class="advantage-icon">🎯</div>
+                            <div>Более 2000 выполненных проектов</div>
+                        </div>
+                        <div class="advantage">
+                            <div class="advantage-icon">⚡</div>
+                            <div>Выезд в течение 2 часов</div>
+                        </div>
+                        <div class="advantage">
+                            <div class="advantage-icon">🛡️</div>
+                            <div>Гарантия на работы до 3 лет</div>
+                        </div>
+                        <div class="advantage">
+                            <div class="advantage-icon">💰</div>
+                            <div>Фиксированные цены</div>
+                        </div>
+                        <div class="advantage">
+                            <div class="advantage-icon">👨‍🔧</div>
+                            <div>Опытные сертифицированные мастера</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number">2000+</div>
+                        <div class="stat-label">Выполненных проектов</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">8+</div>
+                        <div class="stat-label">Лет на рынке</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Довольных клиентов</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-section">
+                <h3>Наша команда</h3>
+                <div class="team-grid">
+                    <div class="team-card fade-in">
+                        <div class="team-photo">👨‍🔧</div>
+                        <h4>Алексей Петров</h4>
+                        <div class="team-position">Ведущий электромонтажник</div>
+                        <div class="team-experience">Опыт работы: 12 лет</div>
+                        <p>Специализируется на сложных электромонтажных работах в частных домах и коттеджах.</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <div class="team-photo">👨‍🔧</div>
+                        <h4>Дмитрий Козлов</h4>
+                        <div class="team-position">Электромонтажник</div>
+                        <div class="team-experience">Опыт работы: 8 лет</div>
+                        <p>Эксперт по коммерческому электромонтажу и промышленному оборудованию.</p>
+                    </div>
+                    <div class="team-card fade-in">
+                        <div class="team-photo">👨‍🔧</div>
+                        <h4>Михаил Сидоров</h4>
+                        <div class="team-position">Электромонтажник</div>
+                        <div class="team-experience">Опыт работы: 6 лет</div>
+                        <p>Специалист по электромонтажу в квартирах и ремонту электрооборудования.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Отзывы клиентов</h2>
+                <p>Что говорят о нас наши клиенты</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-name">Анна Миронова</div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-service">Электромонтаж квартиры</div>
+                    <p>Отличная работа! Ребята приехали точно в назначенное время, сделали все быстро и качественно. Цена соответствует заявленной, никаких скрытых доплат не было.</p>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-name">Сергей Волков</div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-service">Монтаж электрощита</div>
+                    <p>Профессиональный подход к работе. Мастер подробно объяснил, что и как делается, дал рекомендации по эксплуатации. Очень доволен результатом!</p>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-name">Мария Кузнецова</div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-service">Установка розеток</div>
+                    <p>Быстро, аккуратно, по доступной цене. Мастер убрал за собой, не оставил мусора. Гарантию дали на 3 года. Рекомендую!</p>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-name">Алексей Морозов</div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-service">Замена проводки</div>
+                    <p>Полная замена проводки в двухкомнатной квартире. Работали 3 дня, все сделано на высшем уровне. Спасибо большое команде Электрико!</p>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-name">Елена Смирнова</div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-service">Ремонт электропроводки</div>
+                    <p>Была проблема с проводкой - часто выбивало автоматы. Мастер быстро нашел причину и устранил. Теперь все работает отлично!</p>
+                </div>
+                <div class="review-card fade-in">
+                    <div class="review-header">
+                        <div class="review-name">Денис Захаров</div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <div class="review-service">Монтаж освещения</div>
+                    <p>Устанавливали современную систему освещения в офисе. Мастера работали аккуратно, не мешали сотрудникам. Результат превосходный!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="tips" id="tips">
+        <div class="container">
+            <div class="section-header">
+                <h2>Полезные советы</h2>
+                <p>Рекомендации от наших специалистов</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card fade-in">
+                    <h3>Как обеспечить безопасность электропроводки</h3>
+                    <p>Регулярно проверяйте состояние розеток, выключателей и автоматических выключателей. При появлении искр, запаха гари или частых отключений немедленно обращайтесь к специалистам.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Безопасность</span>
+                        <span class="tag">Профилактика</span>
+                    </div>
+                </div>
+                <div class="tip-card fade-in">
+                    <h3>Планирование электропроводки при ремонте</h3>
+                    <p>Перед началом ремонта составьте схему расположения всех розеток, выключателей и светильников. Учтите будущие потребности в электричестве и оставьте запас мощности.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Планирование</span>
+                        <span class="tag">Ремонт</span>
+                    </div>
+                </div>
+                <div class="tip-card fade-in">
+                    <h3>Выбор качественных материалов</h3>
+                    <p>Не экономьте на кабелях, розетках и автоматах. Качественные материалы прослужат дольше и обеспечат безопасность. Доверьте выбор материалов профессионалам.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Материалы</span>
+                        <span class="tag">Качество</span>
+                    </div>
+                </div>
+                <div class="tip-card fade-in">
+                    <h3>Когда нужно менять электропроводку</h3>
+                    <p>Если вашей проводке более 25 лет, она требует замены. Также замена необходима при частых перебоях, запахе гари или использовании алюминиевых проводов.</p>
+                    <div class="tip-tags">
+                        <span class="tag">Замена</span>
+                        <span class="tag">Диагностика</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Часто задаваемые вопросы</h2>
+                <p>Ответы на популярные вопросы о наших услугах</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько времени занимает замена проводки в квартире?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Время зависит от площади квартиры и сложности работ. Обычно замена проводки в однокомнатной квартире занимает 2-3 дня, в двухкомнатной - 3-4 дня, в трехкомнатной - 4-5 дней.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Какая гарантия на выполненные работы?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Мы предоставляем гарантию на электромонтажные работы сроком до 3 лет. На материалы действует гарантия производителя. В случае возникновения проблем мы бесплатно устраним дефекты.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Можете ли вы работать в выходные и праздничные дни?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Да, мы работаем семь дней в неделю. За работу в выходные и праздничные дни взимается доплата в размере 20% от стоимости работ.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Нужно ли покупать материалы самостоятельно?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Нет, мы можем закупить все необходимые материалы сами. У нас есть договоры с поставщиками, поэтому цены получаются ниже розничных. Также возможна работа с вашими материалами.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Как быстро вы можете приехать на вызов?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>В обычное время наш мастер приедет в течение 2 часов. При аварийных ситуациях выезжаем в течение 1 часа. Точное время согласовываем при приеме заявки.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Сколько стоит выезд и консультация?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Выезд и консультация мастера стоят 500 рублей в пределах Казани. При заказе работ на сумму от 3000 рублей выезд бесплатный.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Нужна помощь электрика?</h2>
+                <p>Звоните прямо сейчас и получите бесплатную консультацию!</p>
+                <div class="cta-actions">
+                    <button class="btn btn--primary btn--lg" onclick="scrollToContact()">Заказать звонок</button>
+                    <a href="tel:+78433237777" class="btn btn--outline btn--lg">+7 (843) 323-77-77</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Свяжитесь с нами</h2>
+                <p>Оставьте заявку и мы перезвоним в течение 15 минут</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Контактная информация</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Телефон:</strong><br>
+                            <a href="tel:+78433237777">+7 (843) 323-77-77</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:info@elektriko-kazan.ru">info@elektriko-kazan.ru</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Адрес:</strong><br>
+                            г. Казань, ул. Баумана, д. 58, оф. 12
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <strong>Режим работы:</strong><br>
+                            Ежедневно с 8:00 до 22:00
+                        </div>
+                    </div>
+
+                    <div class="work-gallery">
+                        <h4>Примеры наших работ</h4>
+                        <div class="gallery-grid">
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Электромонтаж">
+                            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Электрощит">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Розетки">
+                            <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Освещение">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Заказать обратный звонок</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Ваше имя *</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Номер телефона *</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service" class="form-label">Интересующая услуга</label>
+                            <select id="service" name="service" class="form-control">
+                                <option value="">Выберите услугу</option>
+                                <option value="electro-apartment">Электромонтаж квартиры</option>
+                                <option value="electro-house">Электромонтаж дома</option>
+                                <option value="electro-commercial">Коммерческий электромонтаж</option>
+                                <option value="repair">Ремонт и обслуживание</option>
+                                <option value="panel">Монтаж электрощита</option>
+                                <option value="outlets">Установка розеток/выключателей</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Описание работ</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Опишите, какие работы необходимо выполнить"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Отправить заявку</button>
+                        <p class="form-note">
+                            Нажимая на кнопку, вы даете согласие на <a href="#">обработку персональных данных</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Электрико</h4>
+                    <p>Профессиональные электромонтажные услуги в Казани с гарантией качества более 8 лет.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Услуги</h4>
+                    <ul>
+                        <li><a href="services.html">Электромонтаж</a></li>
+                        <li><a href="services.html">Монтаж автоматов</a></li>
+                        <li><a href="services.html">Установка розеток</a></li>
+                        <li><a href="services.html">Монтаж освещения</a></li>
+                        <li><a href="services.html">Штробление стен</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li>Телефон: <a href="tel:+78433237777">+7 (843) 323-77-77</a></li>
+                        <li>Email: <a href="mailto:info@elektriko-kazan.ru">info@elektriko-kazan.ru</a></li>
+                        <li>Адрес: г. Казань, ул. Баумана, д. 58</li>
+                        <li>Режим работы: 8:00 - 22:00</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#about">О компании</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#faq">Вопросы и ответы</a></li>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>&copy; 2024 Электрико. Все права защищены.</div>
+                <div>Сайт создан <a href="#">веб-студией</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
