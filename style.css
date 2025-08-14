@@ -1709,6 +1709,31 @@ section {
   color: #000;               /* чёрный текст — можно заменить на фирменный цвет */
   border-color: #fff;        /* убираем цвет рамки, делаем её белой */
 }
+/* Центрируем блок с фичами в герое */
+.hero-features {
+  display: flex;
+  justify-content: center; /* центр по горизонтали */
+  gap: 24px;                /* расстояние между элементами */
+  margin-top: 24px;         /* опустить ниже заголовка и описания */
+}
+
+/* Делаем их в колонку на маленьких экранах */
+@media (max-width: 768px) {
+  .hero-features {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+}
+
+/* Белый текст и иконки для фич */
+.hero-features .feature {
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* расстояние между иконкой и текстом */
+}
 
 .hero .btn--outline:hover {
   background-color: transparent; /* при наведении делаем прозрачной */
