@@ -1703,6 +1703,18 @@ section {
   gap: 16px;
   flex-wrap: wrap;
 }
+/* Белая кнопка "Посмотреть цены" в секции героя */
+.hero .btn--outline {
+  background-color: #fff;    /* белый фон */
+  color: #000;               /* чёрный текст — можно заменить на фирменный цвет */
+  border-color: #fff;        /* убираем цвет рамки, делаем её белой */
+}
+
+.hero .btn--outline:hover {
+  background-color: transparent; /* при наведении делаем прозрачной */
+  color: #fff;                    /* текст в цвет фона секции */
+  border-color: #fff;             /* белая рамка */
+}
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     *,
