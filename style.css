@@ -1740,6 +1740,21 @@ section {
   color: #fff;                    /* текст в цвет фона секции */
   border-color: #fff;             /* белая рамка */
 }
+
+/* Крупнее заголовок героя и больше отступ вниз */
+.hero-text h1 {
+  font-size: 48px;      /* увеличь при необходимости: 56px/64px */
+  line-height: 1.2;     /* комфортная межстрочная высота[6][13] */
+  margin-bottom: 24px;  /* расстояние до описания[7][16] */
+}
+
+/* Адаптив: на мобильных чуть меньше */
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+}
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     *,
