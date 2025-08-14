@@ -1651,6 +1651,58 @@ section {
   position: relative;
   z-index: 1;
 }
+/* --- Герой: белый текст + центрирование --- */
+.hero {
+  background-image: url('images/hero-bg.jpg'); /* твой фон */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  min-height: 100vh;  /* на весь экран */
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* затемнение для контраста */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 0;
+}
+
+/* Контент поверх затемнения */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column; /* чтобы всё шло столбиком */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Белый текст для заголовка и описания */
+.hero-text h1,
+.hero-text p,
+.hero-features,
+.hero-features .feature,
+.hero-features .feature span,
+.hero-features .icon {
+  color: #fff !important;
+}
+
+/* Центрируем кнопки */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     *,
