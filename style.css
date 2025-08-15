@@ -1755,6 +1755,10 @@ section {
     margin-bottom: 16px;
   }
 }
+/* Добавляем больше расстояния сверху для секции "Наши услуги" */
+.services {
+  margin-top: 64px; /* или 80px/100px, как нравится, подбери визуально */
+}
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     *,
