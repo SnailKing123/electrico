@@ -1759,6 +1759,35 @@ section {
 .services {
   margin-top: 64px; /* или 80px/100px, как нравится, подбери визуально */
 }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.team-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.team-photo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.team-photo img {
+  display: block;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;        /* аккуратное кадрирование */
+  border-radius: 50%;       /* круглый аватар */
+  border: 3px solid #F59E0B;/* в цвет айдентики */
+  background: #f6f7fb;
+}
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     *,
